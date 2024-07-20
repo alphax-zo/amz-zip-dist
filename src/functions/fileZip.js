@@ -229,7 +229,7 @@ module.exports = {
         this.zipDirectory(
           rootPath,
           ignores,
-          { outputPath: rootPath, fileName: this.zipName },
+          { outputPath: rootPath, fileName: this.zipName || "dist" },
           { gitignore: false }
         );
       });
