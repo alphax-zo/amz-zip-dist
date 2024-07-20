@@ -1,6 +1,6 @@
 {
   "name": "amz-zip-dist",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Use Scripts Command to zip dist packaged folder",
   "main": "src/index.js",
   "scripts": {

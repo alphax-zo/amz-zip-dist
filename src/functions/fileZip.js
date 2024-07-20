@@ -169,7 +169,13 @@ module.exports = {
 
     const options = program.opts();
 
-    if (!options.zipName && !options.versionPackage) return assetsContent;
+    if (
+      !options.zipName &&
+      !options.versionPackage &&
+      !options.versionPackage
+    ) {
+      return assetsContent;
+    }
 
     let content = "";
     if (this.isBuffer(assetsContent)) {
