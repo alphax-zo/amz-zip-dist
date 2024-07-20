@@ -7,8 +7,6 @@
  * @FilePath: \Weboard-v10.0.0\scripts\functions\fileUtils.js
  * @Description: 业务领域文件处理脚本
  */
-global._require = require('app-root-path').require;
-_require('/scripts/loadEnv').load();
 const { exec } = require('child_process');
 const _ = require('lodash');
 const fs = require('fs');
