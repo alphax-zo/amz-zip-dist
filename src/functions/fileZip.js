@@ -172,7 +172,7 @@ module.exports = {
     if (
       !options.zipName &&
       !options.versionPackage &&
-      !options.versionPackage
+      !options.autoZip
     ) {
       return assetsContent;
     }
