@@ -112,11 +112,11 @@ module.exports = {
       path.join(dir, item).replace(/\\/g, "/")
     );
     log.message(
-      `[Archiver] Begins To Collect The Files Need To Be Compressed...`,
+      `[Archiver] Begins To Collect The Files Need To Be Compressed...\n`,
       "",
       ""
     );
-    const spinner = ora(colors.green(`Files Collecting...`)).start();
+    const spinner = ora(colors.green(`Files Collecting...\n`)).start();
     spinner.color = "green";
     globby(`${zipRootPath}/**/*`, {
       gitignore: true,
@@ -137,7 +137,7 @@ module.exports = {
       });
 
       srcFiles.map((file, idx) => fse.copySync(file, desFiles[idx]));
-      const spinnerCompress = ora(colors.green(`Files Compressing...`)).start();
+      const spinnerCompress = ora(colors.green(`Files Compressing...\n`)).start();
       spinnerCompress.color = "green";
       this.createArchiver(
         { ext, outputPath, fileName },
